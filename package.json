@@ -1,0 +1,42 @@
+{
+  "name": "@editorjs/undo",
+  "version": "0.1.0",
+  "description": "Undo and redo history controller for Editor.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/editorjs-undo.js",
+  "jsdelivr": "./dist/editorjs-undo.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:module && npm run build:standalone",
+    "build:module": "tsc -p tsconfig.json",
+    "build:standalone": "vite build --config vite.config.js",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test .test-dist/test/*.test.js"
+  },
+  "keywords": [
+    "editorjs",
+    "undo",
+    "redo",
+    "indexeddb"
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@editorjs/editorjs": ">=2.31.0"
+  },
+  "devDependencies": {
+    "@editorjs/editorjs": "file:../..",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3",
+    "vite": "^4.5.14"
+  }
+}

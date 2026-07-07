@@ -1,0 +1,1 @@
+{"version":3,"file":"AsyncQueue.d.ts","sourceRoot":"","sources":["../src/AsyncQueue.ts"],"names":[],"mappings":"AAAA,qBAAa,UAAU;IACrB,OAAO,CAAC,IAAI,CAAoC;IAEzC,OAAO,CAAC,MAAM,EAAE,SAAS,EAAE,MAAM,MAAM,GAAG,OAAO,CAAC,MAAM,CAAC,GAAG,OAAO,CAAC,MAAM,CAAC;CAUnF"}
