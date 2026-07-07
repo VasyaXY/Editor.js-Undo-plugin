@@ -24,7 +24,7 @@ export class ShortcutController {
       || event.isComposing
       || !modifierPressed
       || event.altKey
-      || ['z', 'Z', 'я', 'Я'].includes(event.key.toLowerCase())
+      || !['z', 'Z', 'я', 'Я'].includes(event.key.toLowerCase())
     ) {
       return;
     }
